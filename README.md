@@ -7,3 +7,7 @@ Hardware (Project R3d kit)
 - BL Touch
 - Duet 2 WiFi
 - Panel Due
+
+Based on the config files available here:
+- [Railcore github repo](https://github.com/railcore/configs)
+- [Kit config from Railcore Docs](https://www.dropbox.com/sh/og8bolggmqlfrsv/AAAbZ0enHyIRuYoy7knaQSbEa?dl=0)
