@@ -37,9 +37,9 @@ M671 X-10:-10:333  Y22.5:277.5:150 S7.5		; Front left, Rear Left, Right  S7.5 is
 M350 X16 Y16 Z16 E16 I1						; set 16x microstepping for axes& extruder, with interpolation
 M574 X1 Y1 Z0 S1							; set homing switch configuration (x,y at min, z at max) IF YOU NEED TO REVERSE YOUR HOMING SWITCHES CHANGE S1 to S0
 M906 X1400 Y1400 Z1000 E1150 I60			; Set motor currents (mA)
-M201 X3000 Y3000 Z20 E1500					; Accelerations (mm/s^2)
+M201 X3000 Y3000 Z100 E1500					; Accelerations (mm/s^2)
 M203 X24000 Y24000 Z900 E3600				; Maximum speeds (mm/min)
-M566 X1000 Y1000 Z80 E1500					; Maximum jerk speeds mm/minute
+M566 X1000 Y1000 Z100 E1500					; Maximum jerk speeds mm/minute
 M208 X300 Y300 Z610							; 300ZLT - set axis maxima and high homing switch positions (adjust to suit your machine)
 M208 X0 Y0 Z-0.5 S1							; set axis minima and low homing switch positions (adjust to make X=0 and Y=0 the edges of the bed)
 M92 X200 Y200 Z1600	E837					; steps/mm (Extruder - Bondtech BMG)
