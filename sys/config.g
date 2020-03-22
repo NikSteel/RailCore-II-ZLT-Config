@@ -49,10 +49,10 @@ M305 P0 S"Bed" T100000 B3950 R4700 H0 L0	; Put your own H and/or L values here t
 M305 P1 S"E0" T500000 B4723 C1.196220e-7	; Slice Thermistor
 
 ; Heaters
-M307 H0 A240.3 C608.7 D8.2 S1.00 V24.1 B0	; Bed Heaters
+M307 H0 A324.4 C823.5 D7.1 S1.00 V24.0 B0	; Bed Heaters
 M143 H0 S120								; Maximum Bed heater temperature
 
-M307 H1 A472.6 C147.8 D2.7 S1.00 V24.1 B0	; Mosquito Magnum Hotend
+M307 H1 A391.0 C128.9 D2.9 S1.00 V24.0 B0	; Mosquito Magnum Hotend
 M143 H1 S300								; Maximum hotend temperature
 
 M570 S360									; Hot end may be a little slow to heat up so allow it 180 seconds
@@ -74,4 +74,4 @@ T0											; select first hot end
 ; BLTouch Z probe and compensation definition
 M307 H3 A-1 C-1 D-1
 M558 P9 X0 Y0 Z1 H5 F50 T6000 A5 S0.02  
-G31 X2 Y42 Z2.65 P25						; Customize your offsets appropriately - do a paper test, and put the probed value in the Z value here
+G31 X2 Y42 Z2.35 P25						; Customize your offsets appropriately - do a paper test, and put the probed value in the Z value here

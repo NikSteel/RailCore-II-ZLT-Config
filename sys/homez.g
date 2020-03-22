@@ -6,6 +6,9 @@ G90 G1 X150 Y150 F2400 ; Move to the center of the bed
 ; M558  Fxxx sets the probing speed.
 ; Probe rapidly to get us in the right ballpark.
 ; This brings the bed up quickly but may be less accurate.
+
+M401
+
 M558 F500
 G30
 
