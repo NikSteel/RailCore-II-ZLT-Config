@@ -8,7 +8,6 @@ Hardware (Project R3d kit)
 - Bondtech BMG extruder (with e3d MT-1701HSM140AE .9 steps/mm)
 - BL Touch
 - Duet 2 WiFi
-- Panel Due
 
 Based on the config files available here:
 - [Railcore github repo](https://github.com/railcore/configs)
