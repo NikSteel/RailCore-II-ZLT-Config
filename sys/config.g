@@ -52,7 +52,7 @@ M305 P1 S"E0" T100000 B4725 C7.06e-8 R4700 H0 L0  ; E3D Semitec 104GT2 thermisto
 M307 H0 A324.4 C823.5 D7.1 S1.00 V24.0 B0	; Bed Heaters
 M143 H0 S120								; Maximum Bed heater temperature
 
-M307 H1 A241.8 C131.5 D3.4 S1.00 V24.0 B0	; Mosquito Magnum Hotend
+M307 H1 A231.2 C139.9 D3.0 S1.00 V24.0 B0	; Mosquito Magnum Hotend
 M143 H1 S300								; Maximum hotend temperature
 
 M570 S360									; Hot end may be a little slow to heat up so allow it 180 seconds
@@ -60,11 +60,10 @@ M143 S285
 
 ; Fans
 M106 P0 H-1									; disable thermostatic mode for fan 0
-M106 P1 H-1									; disable thermostatic mode for fan 1
+M106 P1 S1 H1 T45 C"Hotend"					; enable termostatic control for fan 1
 M106 P2 H-1									; disable thermostatic mode for fan 2
-M106 P0 S0									; turn off fans
-M106 P1 S0
-M106 P2 S0
+M106 P0 S0									; turn off fan
+M106 P2 S0									; turn off fan
 	
 ; Tool definitions
 M563 P0 S"Mosquito Magnum" D0 H1			; Define tool 0
